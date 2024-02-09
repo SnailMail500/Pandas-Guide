@@ -13,14 +13,18 @@ As stated, this is not an installation guide. Other people can and have done the
 better than I'll ever be able to. Google how to install them if needed.
 
 Python 3.x.x
+
 Pandas
+
 Pyarrow (as of 09/02/24 this is not needed, but pandas is going to be dependent on it
         from the next version on)
+
 Some form of IDE or source code editor (IDLE, Notepad or VS Code will be fine, but VS
                                         itself is just too heavy for this kind of thing.
                                         Not worth the effort. If you aren't very familiar
                                         with coding, just use IDLE (search for it on your
                                         PC)
+
 Git (only if you want to clone this repo)
 
 Instructions:

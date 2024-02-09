@@ -83,3 +83,6 @@ weatherData.dropna(subset = ["Date"])#get rid of all nulls of the subset "Date"
 print("Duplicate? ")
 print(weatherData.duplicated)#this will send a boolean result back for each row
 #no duplicates as printed data. Good.
+
+#now you're familiar with data cleaning, go and do 
+#Data Correlations

@@ -12,4 +12,5 @@ weatherData = pandas.read_csv("C:/Users/Admin/Desktop/Pandas LDS Test/LDS/all-st
 
 print(weatherData.info())#shows info about the data
 
-
+#now you're familiar with imports, printing the data and info about the data, go and do:
+#Data Cleaning
