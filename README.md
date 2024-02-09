@@ -64,3 +64,11 @@ NOTICE:
 This particular guide uses a publically available past data set for educational 
 purposes. Please drop me a message if you want credit or if you want me to change
 part of it for whatever reason. I'll be happy to oblige any reasonable requests.
+
+Finally, a few thanks:
+
+To w3schools, whose guides on pandas have been invaluable to creating this repo and
+without whom this guide would be impossible. 
+To the creators of pandas, which is an unbelievably good tool for the job.
+To Guido Van Rossum and the Python Software Foundation, who have made a world class, 
+if sometimes a bit irritating, programming language.
