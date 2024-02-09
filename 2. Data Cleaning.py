@@ -35,9 +35,9 @@ print(weatherData.to_string())
 
 #for example
 
-weatherData["Date"] = pandas.to_datetime(weatherData["Date"])
+#weatherData["Date"] = pandas.to_datetime(weatherData["Date"])
 #if there is badly formatted data in the date column which needs to be cleaned into the date time format
-
+#as long as the data is mm/dd/yy or the like.
 #or, if there are NULLs in the date column:
 
 weatherData.dropna(subset = ["Date"])#get rid of all nulls of the subset "Date"
@@ -55,11 +55,12 @@ weatherData.dropna(subset = ["Date"])#get rid of all nulls of the subset "Date"
 #anyway, because the data is of a decent size, we should set rules for going through it and replacing wrong data.
 #like this:
 
-for x in weatherData.index:
-    if weatherData.loc[x, "Daily Mean"] == "n/a":
-        weatherData.loc[x, "Daily Mean"] = 0
+#for x in weatherData.index:
+#    if weatherData.loc[x, "Daily Mean"] == "n/a":
+#        weatherData.loc[x, "Daily Mean"] = 0
 
-print("Replaced all values equal to \"n/a\" in the column \"Daily Mean\" with \"0\".")
+#print("Replaced all values equal to \"n/a\" in the column \"Daily Mean\" with \"0\".")
+#etc...
 #so if any values in daily mean = n/a (there was no rain or whatever), it will replace them with 0- which is much better
 #because otherwise it will throw a wobbly, you can't calculate a mean if some of the values are n/a
 
@@ -74,9 +75,11 @@ print("Replaced all values equal to \"n/a\" in the column \"Daily Mean\" with \"
 #   if weatherData.loc[x, "Daily Mean"] > 90:
 #       weatherData.drop(x)
 #for every row in "Daily Mean", if the value > 90, drop it
-#this will definitely affect accuracy
+#this will definitely affect accuracy, so the code is commented out. try it if you want, it's your life and you have a copy of the
+#original file.
 
+#Duplicate rows:
 
-
-
-
+print("Duplicate? ")
+print(weatherData.duplicated)#this will send a boolean result back for each row
+#no duplicates as printed data. Good.
